@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Объекты - ООО «УралСтройСнабМеталл»</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html">
+                <div class="header__logo">
+                    ООО ЖОПА
+                </div>
+            </a>
+            <div class="header__items">
+                <a href="production.html" class="header__item">
+                    Продукция
+                </a>
+                <a class="header__item active" href="objects.html">
+                    Объекты
+                </a>
+                <a class="header__item" href="contacts.html">
+                    Контакты
+                </a>
+            </div>
+            <div class="header__contacts">
+                <a class="header__number" href="tel:+79122004676">+7 (912) 200 46 76</a>
+                <p class="header__time">Ежедневно с 08:00 до 20:00</p>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="main-container objects-container">
+            <section class="objects-section">
+                <h5 class="section-title">Объекты</h5>
+                <p class="section-text">Здесь вы можете ознакомится с портфолио объектов, при возведении которых
+                    использовалась продукция завода «Алтек»</p>
+
+                <div class="object-slider slider swiper-container">
+                    <div class="swiper-wrapper slider-wrapper">
+                        <div class="slider__slide swiper-slide">
+            
+                            <img class="slider__image" alt="Крымский мост"
+                                src="objects/bridge.jpg">
+                            <div class="slider__title">Крымский мост</div>
+                        </div>
+
+
+                        <div class="slider__slide swiper-slide">
+                            <img class="slider__image" src="objects/theatre.jpg">
+                            <div class="slider__title">Мариинский театр</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <img class="slider__image" src="objects/fisht.jpg">
+                            <div class="slider__title">Олимпийский стадион «Фишт»</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                          
+                            <img class="slider__image" src="objects/trc.jpg">
+                            <div class="slider__title">ТРЦ «Боше», г. Старый Оскол</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <img class="slider__image" src="objects/crimea.jpg">
+                            <div class="slider__title">ТЦ «Крым»,г. Киров</div>
+                        </div>
+                        <div class="slider__slide swiper-slide">
+                            <img class="slider__image" src="objects/tatsocbank.jpg">
+                            <div class="slider__title">Офис «Татсоцбанк», г. Казань</div>
+                        </div>
+
+                        <div class="slider__slide swiper-slide">
+                            <img class="slider__image" src="objects/kurck.jpg">
+                            <div class="slider__title">Жилой косплекс, г. Курск</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">© Copyright<span class="footer__year"></span></p>
+        <p class="footer__company">ООО «УралСтройСнабМеталл»</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+
+</html>
