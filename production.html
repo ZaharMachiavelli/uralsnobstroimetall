@@ -3,13 +3,15 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="style.css">
-	<title>Продукция - ООО «УралСтройСнабМеталл»</title>
+	<title>Объекты - ООО «УралСтройСнабМеталл»</title>
 </head>
 
 <body>
@@ -17,17 +19,13 @@
 		<div class="header-content">
 			<a href="index.html">
 				<div class="header__logo">
-					ООО ЖОПА
+					ООО «УралСтройСнабМеталл»
 				</div>
 			</a>
-
 			<div class="header__items">
-				<a href="production.html" class="header__item active" href="#">
+				<a href="production.html" class="header__item active">
 					Продукция
 				</a>
-				<!-- <a class="header__item">
-				Услуги
-			</a> -->
 				<a class="header__item" href="objects.html">
 					Объекты
 				</a>
@@ -43,20 +41,23 @@
 
 	</header>
 	<main>
-		<div class="main-container">
-			<section class="company-info">
+		<div class="main-container objects-container">
+			<section class="objects-section">
 				<h5 class="section-title">
 					Продукция
 				</h5>
 				<p class="section-text">
-					Основное направление деятельности — производство алюминиевого профиля.
-					Номенклатура изделий насчитывает порядка девяти тысяч наименований самых разнообразных алюминиевых
-					профилей. Это широкий комплекс алюминиевых профилей общестроительного назначения, интерьерного
-					профиля, изделий для производства вентилируемых фасадов, конструкций, архитектурных комплексов, а
-					также алюминиевый профиль, согласно чертежам и проектам заказчика.
+					Мы предлагаем высококачественный алюминиевый профиль по самым приемлемым ценам и любым направлениям
+					деятельности
 				</p>
 				<p class="section-text">
-					С полным перечнем выпускаемой продукции вы можете ознакомится, скачав каталог:
+					Номенклатура изделий насчитывает более девяти тысяч наименований алюминиевого профиля. Это широкий
+					выбор алюминиевых профилей общестроительного назначения, для машиностроения, электротехнического
+					назначения, для производства вентилируемых фасадов, строительных конструкций, архитектурных
+					комплексов, а также алюминиевый профиль, выполненный по чертежам и проектам заказчика.
+				</p>
+				<p class="section-text">
+					С полным перечнем выпускаемой продукции вы можете ознакомится, скачав каталог
 				</p>
 				<div class="catalog">
 					<a href="./documents/catalog-full.pdf" download="filename"><button class="catalog__download">Скачать
@@ -64,13 +65,72 @@
 					<a href="./documents/order.xlsx" download=""><button class="catalog__statement">Скачать образец
 							заявки</button></a>
 				</div>
+
+				<div class="object-slider slider swiper-container">
+					<div class="swiper-wrapper slider-wrapper">
+						<div class="slider__slide swiper-slide">
+
+							<img class="slider__image" alt="Алюминиевые лестницы, стремянки"
+								src="assets/productions/al_1.jpg">
+							<div class="slider__prod-title">Алюминиевые лестницы, стремянки</div>
+						</div>
+
+
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Алюминиевый строительный профиль"
+								src="assets/productions/al_2.jpg">
+							<div class="slider__prod-title">Алюминиевый строительный профиль</div>
+						</div>
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Интерьерный алюминиевый профиль"
+								src="assets/productions/al_3.jpg">
+							<div class="slider__prod-title">Интерьерный алюминиевый профиль</div>
+						</div>
+						<div class="slider__slide swiper-slide">
+
+							<img class="slider__image" alt="Алюминиевый профиль для офисных перегородок"
+								src="assets/productions/al_4.jpg">
+							<div class="slider__prod-title">Алюминиевый профиль для офисных перегородок</div>
+						</div>
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Алюминиевый профиль для лифтов"
+								src="assets/productions/al_5.jpg">
+							<div class="slider__prod-title">Алюминиевый профиль для лифтов</div>
+						</div>
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Алюминиевый профиль в автомобилестроении"
+								src="assets/productions/al_6.jpg">
+							<div class="slider__prod-title">Алюминиевый профиль в автомобилестроении</div>
+						</div>
+
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Алюминиевые рекламные конструкции"
+								src="assets/productions/al_7.jpg">
+							<div class="slider__prod-title">Алюминиевые рекламные конструкции</div>
+						</div>
+
+						<div class="slider__slide swiper-slide">
+							<img class="slider__image" alt="Алюминиевый профиль в электротехнике"
+								src="assets/productions/al_8.jpg">
+							<div class="slider__prod-title">Алюминиевый профиль в электротехнике</div>
+						</div>
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<div class="swiper-pagination"></div>
+				</div>
 			</section>
 		</div>
+
 	</main>
 	<footer class="footer">
 		<p class="footer__copyright">© Copyright<span class="footer__year"></span></p>
 		<p class="footer__company">ООО «УралСтройСнабМеталл»</p>
 	</footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="./scripts/script.js"></script>
 
 </html>

@@ -116,9 +116,23 @@ main {
     margin-bottom: 2rem;
 }
 
-.section-text {
+.section-text, .section-list {
     margin-bottom: 1.1rem;
     font-size: 1.1rem;
+    line-height: 1.25;
+}
+
+.section-list {
+    list-style-position: inside;
+}
+
+.section-list__title {
+    margin-bottom: 0.6rem;
+    display: block;
+}
+
+.section-list li {
+    padding: 0.3rem 0 0 1rem;
 }
 
 .main-container {
@@ -144,13 +158,6 @@ main {
     transition: all 0.2s ease;
 }
 
-.contacts__phone,
-.contacts__email,
-.contacts__city {
-    margin-bottom: 0.5rem;
-    display: block;
-    font-weight: 600;
-}
 
 .contacts__title {
     font-weight: 400;
@@ -162,11 +169,11 @@ main {
     align-items: center;
     justify-content: center;
     align-items: center;
-    margin-top: 4.3rem;
+    /* margin-top: 3rem; */
     row-gap: 3rem;
 }
 
-.contacts-feedback__title {
+.contacts-feedback__title, .contacts-alert {
     font-size: 1.75rem;
     text-align: center;
     font-weight: 500;
@@ -260,13 +267,28 @@ main {
 .inputs-container {
     display: flex;
     flex-direction: column;
-    row-gap: 1.2rem;
+    row-gap: 1.5rem;
     margin-bottom: 2rem;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.error-text {
+    position: absolute;
+    bottom: -0.875rem;
+    left: 0;
+    color: #f5222d;
+    font-weight: 500;
+    font-size: 0.75rem;
+    display: none;
+}
+
+.req.error + .error-text {
+    display: inline-block;
 }
 
 .input-container input,
@@ -278,6 +300,26 @@ main {
     border-radius: 10px;
     padding: 0 20px;
     outline: none;
+    font-size: 0.875rem;
+}
+
+.req#phone {
+    padding-left: 30px;
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border: 1px solid black;
+}
+
+.input-container .error {
+    border: 1px solid #f5222d !important;
+}
+
+.phone-prefix {
+    position: absolute;
+    top: 62%;
+    left: 5%;
 }
 
 .input-container textarea {
@@ -299,6 +341,10 @@ main {
     margin-top: 1.875rem;
     align-self: flex-end;
     margin-right: 1.25rem;
+}
+
+.modal__submit span {
+    color: white !important;
 }
 
 .modal-close {
@@ -373,6 +419,12 @@ main {
     position: relative;
 }
 
+.slider-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
 .slider__number {
     position: absolute;
     font-size: 1.4rem;
@@ -381,7 +433,7 @@ main {
     font-weight: 600;
 }
 
-.slider__title {
+.slider__title, .slider__prod-title {
     font-size: 1.875rem;
     position: absolute;
     top: 0;
@@ -390,6 +442,10 @@ main {
     text-align: center;
     top: 0.625rem;
     right: 1.25rem;
+}
+
+.slider__prod-title {
+    color: #000;
 }
 
 .slider__image {
@@ -401,6 +457,7 @@ main {
     overflow: hidden;
     position: relative;
     padding-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 .slider .swiper-button-prev::after,
@@ -423,10 +480,41 @@ main {
 
 /*  */
 
+.contacts__number, .contacts__email {
+    font-size: inherit;
+    color: #6699FF;
+    font-weight: 600;
+}
+
+.contacts__number:hover, .contacts__email:hover {
+    text-decoration: underline;
+}
+
+.contacts-description {
+    font-size: 1.1rem;
+    line-height: 1.25;
+    margin-block: 2.25rem;
+}
+
+.contacts-main {
+    margin-bottom: 3rem;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__city {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: 600;
+}
+
+/*  */
+
 .catalog {
     display: flex;
     align-items: center;
     column-gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .catalog__statement,
@@ -474,4 +562,32 @@ main {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    display: none;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.submit.loading {
+    display: none;
+}
+
+.submit.loading + .loader {
+    display: inline-block;
 }

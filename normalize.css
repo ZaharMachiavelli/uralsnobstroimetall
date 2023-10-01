@@ -32,7 +32,6 @@ s,
 samp,
 small,
 strike,
-strong,
 sub,
 sup,
 tt,
@@ -105,8 +104,7 @@ html {
 body {
     line-height: 1;
 }
-ol,
-ul {
+ol{
     list-style: none;
 }
 a {
