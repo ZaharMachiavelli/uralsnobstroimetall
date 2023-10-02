@@ -16,25 +16,25 @@ new Swiper(".slider", {
     },
 });
 
-// const modalImageCloseBtn = document.querySelector(".modal-image__close");
-// const mail = document.querySelector(".company-info__mail");
-// const modalImageContent = document.querySelector(".modal-image__content");
+const modalImageCloseBtn = document.querySelector(".modal-image__close");
+if (modalImageCloseBtn) {
+    const mail = document.querySelector(".company-info__mail");
+    const modalImageContent = document.querySelector(".modal-image__content");
 
-// mail.addEventListener("click", () => {
-//     modalImage.classList.add("active");
-//     document.body.style.overflow = "hidden";
-// });
+    mail.addEventListener("click", () => {
+        modalImage.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
 
-// modalImageCloseBtn.addEventListener("click", () => {
-//     modalImage.classList.remove("active");
-//     document.body.style.overflow = "";
-// });
+    modalImageCloseBtn.addEventListener("click", () => {
+        modalImage.classList.remove("active");
+        document.body.style.overflow = "";
+    });
 
-// modalImage.addEventListener("click", (e) => {
-//     if (!modalImageContent.contains(e.target)) {
-//         modalImage.classList.remove("active");
-//         document.body.style.overflow = "";
-//     }
-// });
-
-
+    modalImage.addEventListener("click", (e) => {
+        if (!modalImageContent.contains(e.target)) {
+            modalImage.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+}

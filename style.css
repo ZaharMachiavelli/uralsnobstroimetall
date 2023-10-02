@@ -442,6 +442,11 @@ main {
     text-align: center;
     top: 0.625rem;
     right: 1.25rem;
+    display: block;
+    padding: 1rem 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    color: #000;
 }
 
 .slider__prod-title {
@@ -494,10 +499,16 @@ main {
     font-size: 1.1rem;
     line-height: 1.25;
     margin-block: 2.25rem;
+    text-align: center;
 }
 
 .contacts-main {
     margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contacts__email {
+    display: inline-block;
 }
 
 .contacts__phone,
