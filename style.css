@@ -568,11 +568,20 @@ main {
     flex-direction: column;
 }
 
-.object-slider {
+.slider * {
+    user-select: none !important;
+}
+
+.object-slider, .production-slider {
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.production-slider {
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .loader {
