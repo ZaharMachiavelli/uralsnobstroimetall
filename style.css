@@ -465,6 +465,11 @@ main {
     margin-bottom: 2rem;
 }
 
+.main-slider {
+    max-width: 800px;
+    margin: 0 auto 2rem; 
+}
+
 .slider .swiper-button-prev::after,
 .slider .swiper-button-next::after {
     color: #fff;
@@ -572,11 +577,17 @@ main {
     user-select: none !important;
 }
 
+
 .object-slider, .production-slider {
     flex: 1 1 auto;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+.object-slider {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .production-slider {
